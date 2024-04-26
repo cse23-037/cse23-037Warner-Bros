@@ -63,12 +63,12 @@
     <h1>Warner Bros</h1>
   </header>
   <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="Movies.html">Movies</a></li>
-    <li><a href="TV Shows.html">TV Shows</a></li>
-    <li><a href="Games & Apps.html">Games & Apps</a></li>
-    <li><a href="Collections.html">Collections</a></li>
-    <li><a href="Feedback.html">Feedback</a></li>
+    <li><a href="home">Home</a></li>
+    <li><a href="Movies">Movies</a></li>
+    <li><a href="TV Shows">TV Shows</a></li>
+    <li><a href="Games & Apps">Games & Apps</a></li>
+    <li><a href="Collections">Collections</a></li>
+    <li><a href="Feedback">Feedback</a></li>
   </ul>
   <div class="container">
     <img src="RED NOTICE.jpg" height="149"alt="RED NOTICE" width="234">
