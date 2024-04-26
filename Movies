@@ -1,10 +1,82 @@
 <!DOCTYPE html>
+<html>
 
+<head>
+  <title>WARNER BROS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: powderblue; /* Powder blue background */
+      font-family: Arial, sans-serif;
+    }
 
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      color: white; /* Text color */
+    }
 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
+    li {
+      display: inline;
+      margin: 0 10px;
+    }
 
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px; /* Padding for better clickability */
+      border-radius: 5px; /* Rounded corners */
+      background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+      transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
 
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.5); /* Lighter background on hover */
+    }
 
+    .container {
+      display: flex; /* Use flexbox for horizontal layout */
+      justify-content: center; /* Center the images horizontally */
+      margin-top: 20px; /* Add some top margin */
+    }
+
+    .container img {
+      margin: 0 10px; /* Add some spacing between images */
+      max-width: 100%; /* Ensure images don't exceed container width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Warner Bros</h1>
+  </header>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="Movies.html">Movies</a></li>
+    <li><a href="TV Shows.html">TV Shows</a></li>
+    <li><a href="Games & Apps.html">Games & Apps</a></li>
+    <li><a href="Collections.html">Collections</a></li>
+    <li><a href="Feedback.html">Feedback</a></li>
+  </ul>
+  <div class="container">
+    <img src="RED NOTICE.jpg" alt="RED NOTICE">
+    <img src="ME BEFORE YOU.jpg" alt="ME BEFORE YOU">
+    <img src="JUMANJI.jpg" alt="JUMANJI">
+    <img src="THE MEG.jpg" alt="THE MEG">
+    <img src="AQUAMAN.jpg" alt="AQUAMAN">
+  </div>
+</body>
 
 </html>
