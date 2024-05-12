@@ -55,12 +55,74 @@
     .image-container img {
       margin-bottom: 20px; /* Add space below each image */
     }
+        /* Styling for the carousel */
+    .carousel {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel-container {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      flex: 0 0 auto;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+
     
   </style>
 </head>
 
 <body>
+<!-- Carousel container -->
+  <div class="carousel">
+    <div class="carousel-container">
+      <!-- Slide 1 -->
+      <div class="carousel-slide">
+        <img src="AQUAMAN.jpg" alt="Slide 1">
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-slide">
+        <img src="WONKA.jpg" alt="Slide 2">
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-slide">
+        <img src="SMILE.jpg" alt="Slide 3">
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-slide">
+        <img src="JUSTICE LEAGUE.jpg" alt="Slide 4">
+      </div>
+    </div>
+  </div>
 
+  <script>
+    // JavaScript for carousel functionality
+    const carousel = document.querySelector('.carousel');
+    const container = carousel.querySelector('.carousel-container');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+
+    let counter = 0;
+    const slideWidth = slides[0].clientWidth;
+
+    function slide() {
+      counter++;
+      if (counter === slides.length) {
+        counter = 0;
+      }
+      container.style.transform = `translateX(-${counter * slideWidth}px)`;
+    }
+
+    setInterval(slide, 3000); // Auto slide every 3 seconds
+  </script>
   
     <header>
       <h1 style="text-align: center; color: white;">Warner Bros</h1>
