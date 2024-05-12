@@ -46,8 +46,14 @@
     }
 
     .image-container {
-      position: relative; /* Positioning context for the image */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly */
       margin-top: 20px; /* Adjust as needed */
+    }
+
+    .image-container img {
+      margin-bottom: 20px; /* Add space below each image */
     }
 
     .logo-img {
@@ -62,7 +68,7 @@
 
 <body>
   <div class="container">
-    <img class="Warner_Bros._Family_Entertainment_logo.png" alt="Logo ">
+    <!-- Add your logo image here -->
     <header>
       <h1 style="text-align: center; color: darkblue;">Warner Bros</h1>
     </header>
@@ -76,25 +82,25 @@
     </ul>
     <div class="image-container">
       <h1>NEW ARRIVALS</h1>
-      <img src="RED NOTICE.jpg" height="270"alt="RED NOTICE" width="320">
-      <img src="ME BEFORE YOU.jpg" height="270" alt="ME BEFORE YOU"width="320">
+      <!-- Images -->
+      <img src="RED NOTICE.jpg" height="270" alt="RED NOTICE" width="320">
+      <img src="ME BEFORE YOU.jpg" height="270" alt="ME BEFORE YOU" width="320">
       <img src="365 DAYS.jpg" height="270" alt="365 DAYS" width="320">
       <img src="TANGLED.jpg" height="270" alt="TANGLED" width="320">
       <img src="AQUAMAN.jpg" height="270" alt="AQUAMAN" width="320">
     </div>
     <div class="image-container">
       <h1 style="text-align: center; color: purple;">COMING SOON</h1>
-      
-    <img src="JUMANJI.jpg" height="270" alt="JUMANJI" width="320">
-    <img src="IT.jpg" height="270" alt="IT" width="320">
-    <img src="ELEMENTAL.jpg" height="270" alt="ELEMENTAL" width="320">
-    <img src="LUCIFER.jpg" height="270" alt="LUCIFER" width="320">
-    <img src="THE SUMMER I TURNED PRETTY.jpg" height="320" alt="THE SUMMER I TURNED PRETTY" width="334">
-    
+      <!-- Images -->
+      <img src="JUMANJI.jpg" height="270" alt="JUMANJI" width="320">
+      <img src="IT.jpg" height="270" alt="IT" width="320">
+      <img src="ELEMENTAL.jpg" height="270" alt="ELEMENTAL" width="320">
+      <img src="LUCIFER.jpg" height="270" alt="LUCIFER" width="320">
+      <img src="THE SUMMER I TURNED PRETTY.jpg" height="320" alt="THE SUMMER I TURNED PRETTY" width="334">
+    </div>
   </div>
   <footer><p1>2024 WARNERBROS</p1></footer>
 </body>
 
 </html>
-
 
