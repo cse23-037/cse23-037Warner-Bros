@@ -56,22 +56,21 @@
       margin-bottom: 20px; /* Add space below each image */
     }
     
-    .carousel {
-      width: 80%;
-      margin: 50px auto;
+   .carousel {
+      width: 100%;
       overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     .carousel-container {
       display: flex;
+      width: calc(400% - 16px); /* Total width of all slides - margin */
+      margin: 0 -8px; /* Negative margin to remove space between slides */
       transition: transform 0.5s ease;
     }
 
     .carousel-slide {
-      min-width: 100%;
-      flex: 0 0 auto;
+      width: 25%; /* Each slide takes 25% of the viewport width */
+      padding: 0 8px; /* Space between slides */
     }
 
     .carousel img {
