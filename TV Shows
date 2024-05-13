@@ -1,4 +1,56 @@
 <!DOCTYPE html>
+<html>
 
+<head>
+  <title>WARNER BROS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: powderblue; /* Powder blue background */
+      font-family: Arial, sans-serif;
+    }
 
-</html>
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      color: white; /* Text color */
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px; /* Padding for better clickability */
+      border-radius: 5px; /* Rounded corners */
+      background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+      transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
+
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.5); /* Lighter background on hover */
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly */
+      margin-top: 20px; /* Adjust as needed */
+    }
+
+    .image-container img {
+      margin-bottom: 20px; /* Add space below each image */
