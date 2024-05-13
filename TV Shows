@@ -56,7 +56,9 @@
       margin-bottom: 20px; /* Add space below each image */
 
     <body>
-
+   <header>
+      <h1 style="text-align: center; color: white;">WARNER BROS</h1>
+    </header>
 
 
           <h1 style="text-align: center; color: white;">NEW ARRIVALS</h1>
