@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>WARNER BROS</title>
   
@@ -17,7 +18,7 @@
 }
 .navbar-container {
   display: flex;
-  align-items: centre;
+  align-items: center; /* Corrected spelling */
   background-color: black;
   padding: 0 50px;
   height: 100%;
@@ -40,7 +41,7 @@
 
 }
 .menu-list-item{
-  margin-right: 30px
+  margin-right: 30px;
 }
 .profile-container {
   flex: 2;  
@@ -51,7 +52,7 @@
   height: 20px;
   background-color: white;
   border-radius: 30px;
-  display: flex
+  display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
@@ -65,15 +66,25 @@
   background-color: red;
   position: absolute;
   right: 1px;
-  border-radius:50%
+  border-radius:50%;
 }
- .sidebar {
-   width: 50px;
-   height: 100%;
-   background-color: black;
-   position: fixed;
-   top: 0;
- }
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px; /* Adjusted padding */
+}
+
+.sidebar-icon {
+  color: white;
+  margin-bottom: 20px; /* Adjusted margin */
+}
   
   </style>
 
@@ -95,16 +106,16 @@
       
         <div class="toggle">
              <i class="fa-solid fa-moon"></i>
-            <i class=" fa-light fa-sun toggle-icon"></i>
+            <i class="fa-light fa-sun toggle-icon"></i>
             
             <div class="toggle-ball"></div>
         </div>
       </div>
   </div>
   <div class="sidebar">
-  <i class="fa fa-tv" style="font-size:24px"></i>
-    <i class="fa-solid fa-house"></i>
-    <i class="fa-regular fa-user"></i>
+    <i class="fa fa-user sidebar-icon" style="font-size:24px"></i>
+    <i class="fa-solid fa-house sidebar-icon"></i>
+    <i class="fa fa-search sidebar-icon" style="font-size:24px"></i>
   </div>
   
 
