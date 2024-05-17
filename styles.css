@@ -103,6 +103,9 @@
       outline: none;
       
     }
+.movie-list-title {
+      color: red;
+}
 .movie-list-container {
 padding: 20px;
 }
