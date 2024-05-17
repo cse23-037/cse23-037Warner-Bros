@@ -93,6 +93,17 @@
       height: 50vh;
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
+    }
+    .featured-content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url('DEADPOOL.jpg');
+      z-index: -1;
     }
   </style>
 </head>
@@ -125,8 +136,9 @@
   </div>
   <div class="container">
     <div class="content-container">
-      <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('DEADPOOL.jpg');">
+      <div class="featured-content"></div>
     </div>
   </div>
 </body>
 </html>
+
