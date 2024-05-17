@@ -1,142 +1,128 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>WARNER BROS</title>
   
   <style>
-*{
-  margin: 0;
-}
+    * {
+      margin: 0;
+    }
     
-.navbar {
-  width: 100%;
-  height: 50px;
-  background-color: black;
-}
-.navbar-container {
-  display: flex;
-  align-items: center;
-  background-color: black;
-  padding: 0 50px;
-  height: 100%;
-  color: white;
-}
-.logo-container {
-  flex:1;
-}
-.logo{
-  color: white;
-  
-}
-
-.menu-container {
-  flex: 6; 
-}
-.menu-list{
-  display: flex;
-  list-style: none;
-
-}
-.menu-list-item{
-  margin-right: 30px;
-}
-.profile-container {
-  flex: 2;  
-}
-
-.toggle{
-  width: 40px;
-  height: 20px;
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-}
-.toggle-icon{
-  color: red;
-}
-.toggle-ball{
-  width: 18px;
-  height: 18px;
-  background-color: red;
-  position: absolute;
-  right: 1px;
-  border-radius:50%;
-}
-.sidebar {
-  width: 50px;
-  height: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 50px;
-}
-
-.left-menu-icon{
-  color: white;
-  margin-bottom: 40px;
-  
-  
-}
-
-.sidebar-icon {
-  color: white;
-  margin-bottom: 20px;
-}
-.container{
-  background-color: pink; /* Added CSS rule */
-  height:calc(100vh-50px);
-}
-  .content-container{
-    margin-left:50px;
-  }
-  
+    .navbar {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+    }
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      padding: 0 50px;
+      height: 100%;
+      color: white;
+    }
+    .logo-container {
+      flex:1;
+    }
+    .logo {
+      color: white;
+    }
+    .menu-container {
+      flex: 6; 
+    }
+    .menu-list {
+      display: flex;
+      list-style: none;
+    }
+    .menu-list-item {
+      margin-right: 30px;
+    }
+    .profile-container {
+      flex: 2;  
+    }
+    .toggle {
+      width: 40px;
+      height: 20px;
+      background-color: white;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+    }
+    .toggle-icon {
+      color: red;
+    }
+    .toggle-ball {
+      width: 18px;
+      height: 18px;
+      background-color: red;
+      position: absolute;
+      right: 1px;
+      border-radius:50%;
+    }
+    .sidebar {
+      width: 50px;
+      height: 100%;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 50px;
+    }
+    .left-menu-icon {
+      color: white;
+      margin-bottom: 40px;
+    }
+    .sidebar-icon {
+      color: white;
+      margin-bottom: 20px;
+    }
+    .container {
+      background-color: pink; /* Set the background color to pink */
+      height: calc(100vh - 50px);
+    }
+    .content-container {
+      margin-left: 50px;
+    }
   </style>
-
 </head>
 <body>
   <div class="navbar"></div>
-      <div class="navbar-container">
-          <div class="logo-container"><h1 class="logo">WarnerBros</h1></div>
-          <div class="menu-container"></div>
-           <ul class="menu-list">
-               <li class="menu-list-item">Home</li>
-                <li class="menu-list-item">Movies</li>
-                <li class="menu-list-item">TV Shows</li>
-                <li class="menu-list-item">Games & Apps</li>
-                <li class="menu-list-item">Feedback</li>
-                <li class="menu-list-item">Collections</li>
-            </ul>
-          <div class="profile-container"></div>
-      
-        <div class="toggle">
-             <i class="fa-solid fa-moon toggle-icon"></i>
-            <i class="fa-light fa-sun toggle-icon"></i>
-            
-            <div class="toggle-ball"></div>
-        </div>
-      </div>
+  <div class="navbar-container">
+    <div class="logo-container"><h1 class="logo">WarnerBros</h1></div>
+    <div class="menu-container"></div>
+    <ul class="menu-list">
+      <li class="menu-list-item">Home</li>
+      <li class="menu-list-item">Movies</li>
+      <li class="menu-list-item">TV Shows</li>
+      <li class="menu-list-item">Games & Apps</li>
+      <li class="menu-list-item">Feedback</li>
+      <li class="menu-list-item">Collections</li>
+    </ul>
+    <div class="profile-container"></div>
+    <div class="toggle">
+      <i class="fa-solid fa-moon toggle-icon"></i>
+      <i class="fa-light fa-sun toggle-icon"></i>
+      <div class="toggle-ball"></div>
+    </div>
   </div>
   <div class="sidebar">
     <i class="left-menu-icon fa fa-search sidebar-icon" style="font-size:24px"></i>
     <i class="left-menu-icon fa fa-user sidebar-icon" style="font-size:24px"></i>
-     <i class="left-menu-icon fa fa-bookmark sidebar-icon" style="font-size:24px"></i>
+    <i class="left-menu-icon fa fa-bookmark sidebar-icon" style="font-size:24px"></i>
     <i class="left-menu-icon fa fa-shopping-cart sidebar-icon" style="font-size:24px"></i>
     <i class="left-menu-icon fa fa-hourglass sidebar-icon" style="font-size:24px"></i>
   </div>
   <div class="container">
     <div class="content-container">
       bjkguighomj
+    </div>
   </div>
 </body>
-
 </html>
+
