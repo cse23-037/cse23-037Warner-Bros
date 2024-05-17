@@ -121,7 +121,13 @@ padding: 20px;
 .movie-list-item:hover .movie-list-item-img {
       transform: scale(1.2);
       margin: 0 30px;
+      opacity: 0.5;
 }
+.movie-list-item: hover .movie-list-item-title
+.movie-list-item: hover .movie-list-item-desc
+.movie-list-item: hover .movie-list-item-button
+
+
 .movie-list {
       display: flex;
       align-items: center;
@@ -137,6 +143,7 @@ padding: 20px;
       top: 10%;
       left: 50px;
       opacity: 0;
+      transition: 1s all ease-in-out;
       
 }
 
@@ -149,6 +156,7 @@ padding: 20px;
       left: 50px;
       width: 230px;
       opacity: 0;
+      transition: 1s all ease-in-out;
 }
 
 .movie-list-item-button {
@@ -163,6 +171,7 @@ padding: 20px;
       bottom: 20px;
       left: 50px;
       opacity: 0;
+      transition: 1s all ease-in-out;
       
       
       
