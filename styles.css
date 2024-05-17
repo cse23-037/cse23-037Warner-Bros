@@ -123,9 +123,7 @@ padding: 20px;
       margin: 0 30px;
       opacity: 0.5;
 }
-.movie-list-item: hover .movie-list-item-title
-.movie-list-item: hover .movie-list-item-desc
-.movie-list-item: hover .movie-list-item-button
+
 
 
 .movie-list {
