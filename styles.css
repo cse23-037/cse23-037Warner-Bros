@@ -114,4 +114,12 @@ padding: 20px;
       height: 200px;
       object-fit: cover;
 }
-
+.movie-list-item {
+   margin-right: 30px;   
+}
+.movie-list {
+      display: flex;
+      align-items: center;
+      height: 300px;
+      
+}
