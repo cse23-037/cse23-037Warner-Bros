@@ -174,3 +174,7 @@ padding: 20px;
       
       
 }
+.movie-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
