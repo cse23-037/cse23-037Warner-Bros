@@ -77,7 +77,7 @@
     }
     .container {
       background-color: black;
-      height: calc(100vh - 50px);
+      minheight: calc(100vh - 50px);
     }
     .content-container {
       margin-left: 50px;
@@ -103,3 +103,11 @@
       outline: none;
       
     }
+.movie-list-container {
+padding: 20px;
+}
+.movie-list-item-img {
+      width: 270px;
+      height: 200px;
+}
+
