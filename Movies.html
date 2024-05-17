@@ -1,114 +1,168 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>WARNER BROS</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: powderblue; /* Powder blue background */
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-      color: white; /* Text color */
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    li {
-      display: inline;
-      margin: 0 10px;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 10px 20px; /* Padding for better clickability */
-      border-radius: 5px; /* Rounded corners */
-      background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
-      transition: background-color 0.3s ease; /* Smooth transition on hover */
-    }
-
-    a:hover {
-      background-color: rgba(255, 255, 255, 0.5); /* Lighter background on hover */
-    }
-
-    .image-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; /* Distribute items evenly */
-      margin-top: 20px; /* Adjust as needed */
-    }
-
-    .image-container img {
-      margin-bottom: 20px; /* Add space below each image */
-    }
-
-   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-  /* Apply the font to the <h1> tag */
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    /* You can add more styling as desired */
-    font-size: 2.5em;
-    color: #333; /* Example color */
-  }
-
-  </style>
 </head>
 <body>
-  <header>
-    <h1>Warner Bros</h1>
-  </header>
-
-   <ul>
-  <li><a href="home.html">home</a></li>
-  <li><a href="Movies.html">Movies</a></li>
-  <li><a href="TV Shows.html">TV Shows</a></li>
-  <li><a href="Games & Apps.html">Games & Apps</a></li>
-  <li><a href="Collections.html">Collections</a></li>
+   <div class="navbar"></div>
+  <div class="navbar-container">
+    <div class="logo-container"><h1 class="logo">WarnerBros</h1></div>
+    <div class="menu-container"></div>
+    <ul class="menu-list">
+      <li class="menu-list-item"><a href="home.html">Home</a></li>
+      <li class="menu-list-item"><a href="Movies.html">Movies</a></li>
+      <li class="menu-list-item"><a href="TV Shows.html">TV Shows</a></li>
+      <li class="menu-list-item"><a href="Games & Apps.html">Games & Apps</a></li>
+      <li class="menu-list-item"><a href="Feedback.html">Feedback</a></li>
+      <li class="menu-list-item"><a href="Collections.html">Collections</a></li>
     </ul>
-  
-   <h1 style="text-align: center; color: white;">NEW ARRIVALS</h1>
-  <div class="image-container">
-   
-      <!-- Images -->
-      <img src="RED NOTICE.jpg" height="260" alt="RED NOTICE" width="170">
-      <img src="ME BEFORE YOU.jpg" height="260" alt="ME BEFORE YOU" width="170">
-      <img src="365 DAYS.jpg" height="260" alt="365 DAYS" width="170">
-      <img src="TANGLED.jpg" height="260" alt="TANGLED" width="170">
-      <img src="AQUAMAN.jpg" height="260" alt="AQUAMAN" width="170">
-      <img src="THE ORGINALS.jpg" height="260" alt="THE ORIGINALS" width="170">
-      <img src="THE 100.jpg" height="260" alt="THE 100" width="170">
-      <img src="ARGYLLE.jpg" height="260" alt="ARGYLLE" width="170">
-    
+    <div class="profile-container"></div>
+    <div class="toggle">
+      <i class="fa-solid fa-moon toggle-icon"></i>
+      <i class="fa-light fa-sun toggle-icon"></i>
+      <div class="toggle-ball"></div>
     </div>
+  </div>
+  <div class="sidebar">
+    <i class="left-menu-icon fa fa-search sidebar-icon" style="font-size:24px"></i>
+    <i class="left-menu-icon fa fa-user sidebar-icon" style="font-size:24px"></i>
+    <i class="left-menu-icon fa fa-bookmark sidebar-icon" style="font-size:24px"></i>
+    <i class="left-menu-icon fa fa-shopping-cart sidebar-icon" style="font-size:24px"></i>
+    <i class="left-menu-icon fa fa-hourglass sidebar-icon" style="font-size:24px"></i>
+  </div>
+  <div class="container">
+    <div class="content-container">
+      <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('DEADPOOL.jpg');">
+   
+          <img class="featured-title">
+              <p class="featured-desc">
+                A wisecracking mercenary gets experimented on and becomes immortal yet hideously scarred, and sets out to track down the man who ruined his looks. </p>
+        <button class="featured-button">Watch Now</button>
+            
+      </div>
+      <div class="movie-list-container">
+        
+        <h1 style="color: red;" class="movie-list-title">NEW RELEASES</h1>
+        
+        <div class="movie-list-wrapper">
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="JUSTICE LEAGUE.jpg" alt="JUSTICE LEAGUE">
+                      <span class="movie-list-item-title">JUSTICE LEAGUE</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                        Fuelled by his restored faith in humanity, and inspired by Superman's selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly-awakened enemy.</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
 
-    <h1 style="text-align: center; color: white;">COMING SOON</h1>
-  <div class="image-container">
-     
-     <!-- Images -->
-      <img src="JUMANJI.jpg" height="260" alt="JUMANJI" width="170">
-      <img src="IT.jpg" height="260" alt="IT" width="170">
-      <img src="ELEMENTAL.jpg" height="260" alt="ELEMENTAL" width="170">
-      <img src="LUCIFER.jpg" height="260" alt="LUCIFER" width="170">
-      <img src="THE SUMMER I TURNED PRETTY.jpg" height="260" alt="THE SUMMER I TURNED PRETTY" width="170">
-      <img src="VAMPIRE DIARIES.jpg" height="260" alt="VAMPIRE DIARIES" width="170">
-      <img src="KUNG FU PANDA.jpg" height="260" alt="KUNG FU PANDA" width="170">
-      <img src="THE BEEKEEPER.jpg" height="260" alt="THE BEEKEEPER" width="170">  
+      
+                  </div>
+              </div>
+
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="JOKER.jpg" alt="JOKER">
+                       <span class="movie-list-item-title">JOKER</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                        Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+              </div>
+
+
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="IT.jpg" alt="IT">
+                       <span class="movie-list-item-title">IT</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                       follows the experiences of seven children as they are terrorized by an evil entity that exploits the fears of its victims to disguise itself while hunting its prey..</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+              </div>
+
+
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="KATE.jpg" alt="KATE">
+                      <span class="movie-list-item-title">KATE</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                        Slipped a fatal poison on her final job, a ruthless assassin working in Tokyo has less than 24 hours to find out who ordered the hit and exact revenge</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+          
+
+        </div>
+      </div>
+      
+      <div class="movie-list-container">
+        
+        <h1 style="color: red;" class="movie-list-title">COMING SOON</h1>
+        
+        <div class="movie-list-wrapper">
+            
+               <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="JUSTICE LEAGUE.jpg" alt="JUSTICE LEAGUE">
+                      <span class="movie-list-item-title">JUSTICE LEAGUE</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                        Fuelled by his restored faith in humanity, and inspired by Superman's selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly-awakened enemy.</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+              </div>
+
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="JOKER.jpg" alt="JOKER">
+                       <span class="movie-list-item-title">JOKER</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                        Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+              </div>
+
+
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="IT.jpg" alt="IT">
+                       <span class="movie-list-item-title">IT</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                       follows the experiences of seven children as they are terrorized by an evil entity that exploits the fears of its victims to disguise itself while hunting its prey..</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+              </div>
+
+
+              <div class="movie-list">
+                  <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="KATE.jpg" alt="KATE">
+                      <span class="movie-list-item-title">KATE</span>
+                      <p style="color: white;" class="movie-list-item-desc">
+                        Slipped a fatal poison on her final job, a ruthless assassin working in Tokyo has less than 24 hours to find out who ordered the hit and exact revenge</p>
+                        <button class="movie-list-item-button">Watch NOW</button> 
+
+      
+                  </div>
+              </div>
+
+            
+        </div>
+      </div>
+        </div>
+      </div>
+      
+    </div>
   </div>
 </body>
-
 </html>
