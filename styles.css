@@ -114,7 +114,8 @@ padding: 20px;
       object-fit: cover;
 }
 .movie-list-item {
-   margin-right: 30px;  
+      margin-right: 30px;
+      position: relative:
    
 }
 .movie-list-item:hover .movie-list-item-img {
@@ -125,9 +126,44 @@ padding: 20px;
       display: flex;
       align-items: center;
       height: 300px;
+}
+
+.movie-list-item-title {
+      background-color: red;
+      padding: 0 10px;
+      font-size: 32px;
+      font-weight: bold;
+      position: absolute;
+      top: 10%;
+      left: 50px;
+      opacity: 0;
+      
+}
 
 .movie-list-item-desc {
-text-color: white;     
+      padding: 10px;
+      font-sixe: 14px;  
+      font-weight: bold;
+      position: absolute;
+      top: 30%;
+      left: 50px;
+      width: 230px;
+      opacity: 0;
 }
-      
 
+.movie-list-item-button {
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      opacity: 0;
+      
+      
+      
+}
