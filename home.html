@@ -4,6 +4,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>WARNER BROS</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+  </style>
 </head>
 <body>
    <div class="navbar"></div>
@@ -173,6 +180,14 @@
     </div>
     WARNER BROS 2024
   </footer>
+  <script>
+    const toggle = document.querySelector('.toggle');
+    const body = document.querySelector('body');
+
+    toggle.addEventListener('click', function() {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
 
