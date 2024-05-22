@@ -4,20 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Streaming Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      text-align: left;
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    
+    form {
+      margin-top: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    
+    textarea {
+      height: 100px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Website Title</h1>
-    <nav>
-      <ul>
-       <li class="menu-list-item"><a href="home.html">Home</a></li>
-      <li class="menu-list-item"><a href="Movies.html">Movies</a></li>
-      <li class="menu-list-item"><a href="TV Shows.html">TV Shows</a></li>
-      <li class="menu-list-item"><a href="Kids.html">Kids</a></li>
-      <li class="menu-list-item"><a href="Games & Apps.html">Games & Apps</a></li>
-       <li class="menu-list-item"><a href="Sign in.html">Sign in</a></li>
-      <li class="menu-list-item"><a href="Feedback.html">Feedback</a></li>
-      </ul>
+    <!-- Bootstrap Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Movies.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TV Shows.html">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Kids.html">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Games & Apps.html">Games & Apps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sign in.html">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   
@@ -42,5 +140,11 @@
   <footer>
     <p>&copy; 2024 Streaming Website. All rights reserved.</p>
   </footer>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
